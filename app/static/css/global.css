@@ -10,4 +10,22 @@ html {
 
 body {
   font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button {
+  border: none;
+  outline: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
