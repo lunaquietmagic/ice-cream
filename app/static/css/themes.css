@@ -1,0 +1,14 @@
+/* --- ТЕМА MOCHA --- */
+[data-theme="mocha"] {
+  --bg-main: #11111b;
+  --bg-surface0: #1e1e2e;
+  --bg-surface1: #313244;
+  --bg-surface2: #45475a;
+  --bg-element: #181825;
+
+  --text-primary: #cdd6f4;
+  --text-secondary: #a6adc8;
+
+  --action-color: #89b4fa;
+  --border-color: var(--bg-surface1);
+}

@@ -1,0 +1,18 @@
+{% include 'base.html' %}
+{% block content %}
+
+<div class="chat-card">
+    <div class="header">Название чата</div>
+
+    <div class="messages">
+        <div class="msg">Привет! Как дела?</div>
+        <div class="msg unread">Это новое сообщение (is_read=False)</div>
+    </div>
+
+    <form class="footer" action="/send" method="POST">
+        <input type="text" name="text" placeholder="Сообщение..." required>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+{% endblock %}
