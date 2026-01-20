@@ -1,13 +1,15 @@
 /* --- ТЕМА MOCHA --- */
 [data-theme="mocha"] {
-  --bg-main: #11111b;
-  --bg-surface0: #1e1e2e;
-  --bg-surface1: #313244;
-  --bg-surface2: #45475a;
-  --bg-element: #181825;
+  --crust: #11111b;
+  --mantle: #181825;
+  --base: #1e1e2e;
+  --surface0: #313244;
+  --surface1: #45475a;
+  --surface2: #585b70;
 
-  --text-primary: #cdd6f4;
-  --text-secondary: #a6adc8;
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
 
   --action-color: #89b4fa;
   --border-color: var(--bg-surface1);

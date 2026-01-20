@@ -5,6 +5,39 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: var(--bg-main);
-  color: var(--text-primary);
+  background: var(--base);
+  color: var(--text);
+}
+
+.chat-card {
+  background: var(--surface0);
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  color: var(--action-color);
+}
+
+.messages {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4px;
+  background: var(--surface1);
+  height: 500px;
+}
+
+.msg {
+  max-width: 80%;
+  padding: 6px 10px;
+  width: fit-content;
+  background: var(--surface2);
+}
+
+.msg.unread {
+  border-left: solid 2px var(--action-color);
 }
