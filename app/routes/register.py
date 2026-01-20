@@ -4,4 +4,4 @@ register_page = Blueprint('register__page', __name__)
 
 @register_page.route("/register")
 def register():
-    return render_template("register.html")
+    return render_template("register.html", page_name="register")

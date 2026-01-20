@@ -1,7 +1,5 @@
-{% with page_name='register' %}
-    {% include 'header.html' %}
-{% endwith %}
+{% extends 'base.html' %}
 
-    <h1>Register Page!</h1>
-
-{% include 'footer.html' %}
+{% block content %}
+    <h1>{{page_name.capitalize()}} Page!</h1>
+{% endblock %}

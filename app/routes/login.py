@@ -4,4 +4,4 @@ login_page = Blueprint('login_page', __name__)
 
 @login_page.route("/login")
 def login():
-    return render_template("login.html")
+    return render_template("login.html", page_name="login")
