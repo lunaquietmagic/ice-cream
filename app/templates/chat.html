@@ -10,9 +10,20 @@
     </div>
 
     <form class="footer" action="/send" method="POST">
-        <input type="text" name="text" placeholder="Сообщение..." required>
+        <textarea name="message-input" placeholder="Сообщение..." rows="1" required></textarea>
         <button type="submit">Send</button>
     </form>
 </div>
 
 {% endblock %}
+
+<script>
+    const textarea = document.querySelector('textarea');
+
+    textarea.addEventListener('input', autoResize);
+
+    function autoResize() {
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+    }
+</script>

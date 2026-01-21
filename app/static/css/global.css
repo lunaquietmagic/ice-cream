@@ -13,13 +13,32 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-input, button {
+input, button, textarea {
   border: none;
   outline: none;
+  background: none;
+  
 }
 
 input, button, textarea, select {
   font: inherit;
+}
+
+textarea {
+  color: var(--text);
+  resize: none;
+}
+
+textarea::placeholder {
+  color: var(--surface2);
+}
+
+button[type=submit] {
+  color: var(--action-color);
+}
+
+button[type=submit]:hover {
+  cursor: pointer;
 }
 
 ul, ol, li {

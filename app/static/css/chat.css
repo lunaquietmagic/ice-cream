@@ -5,12 +5,15 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: var(--base);
+  background: var(--crust);
   color: var(--text);
 }
 
 .chat-card {
-  background: var(--surface0);
+  background: var(--mantle);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -27,17 +30,31 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   gap: 4px;
-  background: var(--surface1);
-  height: 500px;
+  background: var(--base);
 }
 
 .msg {
   max-width: 80%;
   padding: 6px 10px;
   width: fit-content;
-  background: var(--surface2);
+  background: var(--surface0);
+  border-radius: 14px;
 }
 
 .msg.unread {
   border-left: solid 2px var(--action-color);
+}
+
+.footer {
+  display: flex;
+}
+
+.footer textarea {
+  flex: 1;
+  resize: none;
+  overflow-y: auto;
+  max-height: 100px;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  padding: 10px;
 }
