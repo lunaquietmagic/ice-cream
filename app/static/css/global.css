@@ -48,3 +48,15 @@ ul, ol, li {
 a {
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--action-color);
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+}
